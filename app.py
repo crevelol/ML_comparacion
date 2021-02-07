@@ -25,6 +25,6 @@ def bench():
 # def iris():
 #     return render_template('iris.html')
 
-
-app.run()
+if __name__ == "__main__":
+    app.run()
 
