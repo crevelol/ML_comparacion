@@ -1,0 +1,99 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="d-flex justify-content-center mt-3">
+    <div class="card " style="width: 18rem;">
+        <img src="{{ url_for('static', filename='Carlos.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Carlos Gabriel Revelo Landeta</h5>
+            <p class="card-text">Estudiante de la Universidad Politécnica Salesiana de la Carrare de Ciencias de la Computación</p>
+        </div>
+    </div>
+    <div class="card " style="width: 18rem;">
+        <img src="{{ url_for('static', filename='me.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Debby Melany León Yaguana</h5>
+            <p class="card-text">Estudiante de la Universidad Politécnica Salesiana de la Carrare de Ciencias de la Computación</p>
+        </div>
+    </div>
+    <div class="card " style="width: 18rem;">
+        <img src="{{ url_for('static', filename='jordy.jpeg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Jordy Fernando Quilachamín Burbano</h5>
+            <p class="card-text">Estudiante de la Universidad Politécnica Salesiana de la Carrare de Ciencias de la Computación</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="p-4">
+                DATASET IRIS
+            </h3>
+            <p class="text-justify">
+                <h6>
+                    Esta es quizás la base de datos más conocida que se puede encontrar en la literatura sobre reconocimiento de patrones. El artículo de Fisher es un clásico en el campo y se hace referencia con frecuencia hasta el día de hoy. (Ver Duda & Hart, por ejemplo.)
+                    El conjunto de datos contiene 3 clases de 50 instancias cada una, donde cada clase se refiere a un tipo de planta de iris. Una clase es linealmente separable de las otras 2; estos últimos NO son linealmente separables entre sí.
+                </h6>
+                <h4>
+                    Información de atributos:
+                </h4>
+                <h6>
+                    <ol>
+                        <li>Largo del sépalo en cm</li>
+                        <li>Ancho del sépalo en cm</li>
+                        <li>Largo de pétalo en cm</li>
+                        <li>Ancho de pétalo en cm</li>
+                        <li>Clase:</li>
+                        <ul>
+                            <li>Iris Setosa</li>
+                            <li>Iris Versicolor</li>
+                            <li>Iris Virginica</li>
+                        </ul>
+                    </ol>
+                </h6>
+            </p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="{{ url_for('static', filename='iris.jpg') }}" alt="" class="img-fluid img-main p-4" />
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="{{ url_for('static', filename='wine.jpg') }}" alt="" class="img-fluid img-main p-4" />
+        </div>
+        <div class="col-md-6 justify-content-center">
+            <h3 class="p-4">
+                WINE DATASET
+            </h3>
+            <p class="text-justify">
+                <h6>
+                    Estos datos son el resultado de un análisis químico de vinos cultivados en la misma región en Italia pero derivados de tres cultivares diferentes. El análisis determinó las cantidades de 13 componentes que se encuentran en cada uno de los tres tipos de
+                    vinos.
+                </h6>
+                <h4>
+                    Información de atributos:
+                </h4>
+                <h6>
+                    <ol>
+                        <li>Alcohol</li>
+                        <li>Ácido málico</li>
+                        <li>Ceniza</li>
+                        <li>Alcalinidad de la ceniza</li>
+                        <li>Magnesio</li>
+                        <li>Fenoles totales</li>
+                        <li>Flavonoides</li>
+                        <li>Fenoles no flavonoides</li>
+                        <li>Proantocianinas</li>
+                        <li>Intensidad de color</li>
+                        <li>Tono</li>
+                        <li>DO280 / DO315 de vinos diluidos</li>
+                        <li>Prolina</li>
+                    </ol>
+                </h6>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

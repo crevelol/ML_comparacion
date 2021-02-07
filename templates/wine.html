@@ -1,0 +1,88 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container mt-3">
+    <div class="row">
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <div class=" align-self-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">ACCURACY</h5>
+                        <p class="card-text">Nos indica el porcentaje de aciertos del modelo con respecto a todos los datos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <canvas id="wine-chart" width="400" height="300"></canvas>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <div class="align-self-center">
+                <div class="card " style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">PRECISION</h5>
+                        <p class="card-text">Es la proporción de ejemplos que realmente pertenecen a la clase de entre los que fueron clasificados como pertenecientes a la clase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <canvas id="wine-pre0" width="400" height="300"></canvas>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <canvas id="wine-pre1" width="400" height="300"></canvas>
+        </div>
+        <div class="col-md-6">
+            <canvas id="wine-pre2" width="400" height="300"></canvas>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <div class=" align-self-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">RECALL</h5>
+                        <p class="card-text">Es la proporción de ejemplos que fueron clasificados como pertenecientes a la clase entre todos los ejemplos que verdaderamente pertenecen a esa clase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <canvas id="wine-rec0" width="400" height="300"></canvas>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <canvas id="wine-rec1" width="400" height="300"></canvas>
+        </div>
+        <div class="col-md-6">
+            <canvas id="wine-rec2" width="400" height="300"></canvas>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <div class="align-self-center">
+                <div class="card " style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">F-Measure</h5>
+                        <p class="card-text">F Score o F Measure o puntuación F1 transmite el equilibrio entre la precisión y la recuperación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <canvas id="wine-f0" width="400" height="300"></canvas>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <canvas id="wine-f1" width="400" height="300"></canvas>
+        </div>
+        <div class="col-md-6">
+            <canvas id="wine-f2" width="400" height="300"></canvas>
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %} {% block footer %}
+<script src="./static/js/wine.js"></script>
+{% endblock %}
